@@ -1,10 +1,10 @@
-import { Row, Col, Button } from "react-bootstrap";
-import { useNavigate } from "react-router";
-import FeatureCard from "../components/FeatureCard";
-import TripTips from "../components/TripTips";
+import { Row, Col, Button } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
+import FeatureCard from '../components/FeatureCard'
+import TripTips from '../components/TripTips'
 
 export default function HomePage() {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   return (
     <>
@@ -14,8 +14,8 @@ export default function HomePage() {
           Trip Planner helps users organize destination ideas, trip details, and
           travel plans in one simple place.
         </p>
-        <Button variant="success" onClick={() => navigate("/about")}>
-          Learn More
+        <Button variant="success" onClick={() => navigate('/planner')}>
+          Start Planning
         </Button>
       </section>
 
@@ -48,5 +48,5 @@ export default function HomePage() {
 
       <TripTips />
     </>
-  );
+  )
 }
