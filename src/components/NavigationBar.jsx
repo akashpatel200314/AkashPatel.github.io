@@ -15,10 +15,13 @@ function NavigationBar() {
               Home
             </Nav.Link>
             <Nav.Link as={NavLink} to="/planner">
-              Planner
+              Trips
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/about">
-              About
+            <Nav.Link as={NavLink} to="/notes">
+              Notes
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/budget">
+              Budget
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
